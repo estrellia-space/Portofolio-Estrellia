@@ -1,79 +1,136 @@
-# 👷 Civil Engineering Portfolio - Estrellia Sari Bara’allo
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-Welcome to my portfolio!  
-I am **Estrellia Sari Bara’allo, S.T.**, a Civil Engineer passionate about **sustainability, geotechnical engineering, and infrastructure construction**.  
-Here, you can find my academic projects, internship experiences, and volunteer contributions in civil engineering.
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1B2A41; /* default background */
+  color: #e0e6f0;
+  transition: background-color 0.8s ease;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
----
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
 
-## 📌 About Me
-- 🎓 Bachelor’s in Civil Engineering, Universitas Kristen Indonesia Toraja (GPA 3.57/4)
-- 🏗️ Internship: Field Technical Executor at **PT Brantas Abipraya (IKN Project, 2023)**
-- 🤝 Active in student organizations & volunteering (Kelas Inspirasi Toraja, Indonesia Mengajar, etc.)
-- 📍 Based in Makassar, Indonesia  
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-💡 *“I always believe that the spirit of learning and determination to improve will lead me to meaningful experiences.”*
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+  color: #f0f4f8;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
 
----
+header p {
+  font-style: italic;
+  color: #aab8d3;
+  font-size: 1.1rem;
+}
 
-## 🛠 Skills
-- **Design & Analysis**: AutoCAD, RAB, GeoStudio 2018  
-- **Documentation & Reporting**: Microsoft Office, QS Training  
-- **Soft Skills**: Teamwork, Communication, Time Management  
+.slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+}
 
----
+.slides {
+  position: relative;
+}
 
-## 📂 Featured Projects
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  color: #e0e6f0;
+  padding: 10px 5px;
+  pointer-events: none;
+}
 
-### 1️⃣ Retention Basin Stability Analysis (Thesis Project)
-- Method: Fellenius & GeoStudio 2018  
-- Case Study: Retention Basin at IKN, East Kalimantan  
-- Includes manual calculation and GeoStudio modeling  
-📄 [View Project](./Projects/Retention-Basin-Stability.md)
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  pointer-events: auto;
+}
 
----
+.slide h2 {
+  color: #a3c4f3;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
 
-### 2️⃣ Bridge Design (Course Project)
-- Arch bridge with steel truss structure  
-- Designed for load transfer through compression to reinforced concrete abutments  
-📄 [View Project](./Projects/Bridge-Design.md)
+.slide p, .slide ul {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #d0d8e8;
+}
 
----
+.slide ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
 
-### 3️⃣ Traditional House Structure (Tongkonan)
-- Structural design for traditional Torajan house  
-- Focus on cultural-based structural engineering  
-📄 [View Project](./Projects/Tongkonan-Structure.md)
+.slide ul li {
+  margin-bottom: 8px;
+}
 
----
+a {
+  color: #7fb1ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-### 4️⃣ Patane Project
-- Structural and architectural design of Patane (Toraja traditional grave)  
-📄 [View Project](./Projects/Patane-Project.md)
+a:hover {
+  color: #a3c4f3;
+  text-decoration: underline;
+}
 
----
+.controls {
+  margin-top: 30px;
+  text-align: center;
+}
 
-### 5️⃣ Boarding House Building
-- Planning and structural calculation of a boarding house project  
-📄 [View Project](./Projects/Boarding-House.md)
+button {
+  background-color: #3a5a99;
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  margin: 0 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
 
----
+button:hover {
+  background-color: #2a4470;
+}
 
-## 🎖 Certifications
-- Quantity Surveyor Training  
-- GeoStudio 2018  
-- AutoCAD 2D  
-- RAB  
-- English for Career Development  
-
----
-
-## 📬 Contact
-- 📧 Email: estrelliasb@gmail.com  
-- 📱 Phone: +62 822-9058-8487  
-- 💼 LinkedIn: [linkedin.com/in/estrelliabara](https://www.linkedin.com/in/estrelliabara)  
-- 📸 Instagram: [@estrelliabara](https://www.instagram.com/estrelliabara)
-
----
-
-⭐ If you like my projects, feel free to **star** this repo or connect with me!
+button:focus {
+  outline: 2px solid #7fb1ff;
+  outline-offset: 2px;
+}
