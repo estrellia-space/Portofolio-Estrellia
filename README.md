@@ -1,136 +1,53 @@
-/* Reset & base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Civil Engineering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Estrellia Sari Bara’allo, S.T.</h1>
+      <p>Passionate Civil Engineer | Building Sustainable Futures</p>
+    </header>
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1B2A41; /* default background */
-  color: #e0e6f0;
-  transition: background-color 0.8s ease;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
+    <div class="slider">
+      <div class="slides">
+        <div class="slide active" data-bg="#1B2A41">
+          <h2>About Me</h2>
+          <p>Lulusan Teknik Sipil dengan minat di bidang konstruksi dan ilmu teknik. Berpengalaman magang di proyek pembangunan embung di Ibu Kota Nusantara.</p>
+        </div>
+        <div class="slide" data-bg="#2E4057">
+          <h2>Projects</h2>
+          <ul>
+            <li>Proyek Pembangunan Embung KIPP, IKN</li>
+            <li>Desain Jembatan Lengkung Struktur Baja</li>
+            <li>Perencanaan Bangunan Kos dan Rumah Adat Tongkonan</li>
+          </ul>
+        </div>
+        <div class="slide" data-bg="#3F5871">
+          <h2>Skills</h2>
+          <p>AutoCAD (80%), MS Office (80%), Geostudio 2018 (70%)</p>
+          <p>Analisis Stabilitas Tubuh Embung, Perhitungan Manual & Geostudio</p>
+        </div>
+        <div class="slide" data-bg="#4F6D8C">
+          <h2>Contact</h2>
+          <p>Email: estrelliasb@gmail.com</p>
+          <p>Phone: +62 822-9058-8487</p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/estrelliabara" target="_blank" rel="noopener">linkedin.com/in/estrelliabara</a></p>
+          <p>Instagram: <a href="https://instagram.com/estrelliabara" target="_blank" rel="noopener">@estrelliabara</a></p>
+        </div>
+      </div>
 
-.container {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  max-width: 700px;
-  width: 100%;
-  padding: 30px 40px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  backdrop-filter: blur(10px);
-}
+      <div class="controls">
+        <button id="prevBtn" aria-label="Previous Slide">&#10094;</button>
+        <button id="nextBtn" aria-label="Next Slide">&#10095;</button>
+      </div>
+    </div>
+  </div>
 
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  font-size: 2.4rem;
-  margin-bottom: 8px;
-  color: #f0f4f8;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
-}
-
-header p {
-  font-style: italic;
-  color: #aab8d3;
-  font-size: 1.1rem;
-}
-
-.slider {
-  position: relative;
-  overflow: hidden;
-  min-height: 220px;
-}
-
-.slides {
-  position: relative;
-}
-
-.slide {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-  color: #e0e6f0;
-  padding: 10px 5px;
-  pointer-events: none;
-}
-
-.slide.active {
-  opacity: 1;
-  transform: scale(1);
-  position: relative;
-  pointer-events: auto;
-}
-
-.slide h2 {
-  color: #a3c4f3;
-  margin-bottom: 15px;
-  font-weight: 600;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
-}
-
-.slide p, .slide ul {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: #d0d8e8;
-}
-
-.slide ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.slide ul li {
-  margin-bottom: 8px;
-}
-
-a {
-  color: #7fb1ff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #a3c4f3;
-  text-decoration: underline;
-}
-
-.controls {
-  margin-top: 30px;
-  text-align: center;
-}
-
-button {
-  background-color: #3a5a99;
-  border: none;
-  color: white;
-  padding: 12px 22px;
-  margin: 0 12px;
-  font-size: 18px;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: background-color 0.3s ease;
-  user-select: none;
-}
-
-button:hover {
-  background-color: #2a4470;
-}
-
-button:focus {
-  outline: 2px solid #7fb1ff;
-  outline-offset: 2px;
-}
+  <script src="script.js"></script>
+</body>
+</html>
