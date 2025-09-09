@@ -1,53 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio - Civil Engineering</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Estrellia Sari Bara’allo, S.T.</h1>
-      <p>Passionate Civil Engineer | Building Sustainable Futures</p>
-    </header>
+# 👷 Civil Engineering Portfolio - Estrellia Sari Bara’allo
 
-    <div class="slider">
-      <div class="slides">
-        <div class="slide active" data-bg="#1B2A41">
-          <h2>About Me</h2>
-          <p>Lulusan Teknik Sipil dengan minat di bidang konstruksi dan ilmu teknik. Berpengalaman magang di proyek pembangunan embung di Ibu Kota Nusantara.</p>
-        </div>
-        <div class="slide" data-bg="#2E4057">
-          <h2>Projects</h2>
-          <ul>
-            <li>Proyek Pembangunan Embung KIPP, IKN</li>
-            <li>Desain Jembatan Lengkung Struktur Baja</li>
-            <li>Perencanaan Bangunan Kos dan Rumah Adat Tongkonan</li>
-          </ul>
-        </div>
-        <div class="slide" data-bg="#3F5871">
-          <h2>Skills</h2>
-          <p>AutoCAD (80%), MS Office (80%), Geostudio 2018 (70%)</p>
-          <p>Analisis Stabilitas Tubuh Embung, Perhitungan Manual & Geostudio</p>
-        </div>
-        <div class="slide" data-bg="#4F6D8C">
-          <h2>Contact</h2>
-          <p>Email: estrelliasb@gmail.com</p>
-          <p>Phone: +62 822-9058-8487</p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/estrelliabara" target="_blank" rel="noopener">linkedin.com/in/estrelliabara</a></p>
-          <p>Instagram: <a href="https://instagram.com/estrelliabara" target="_blank" rel="noopener">@estrelliabara</a></p>
-        </div>
-      </div>
+Welcome to my portfolio!  
+I am **Estrellia Sari Bara’allo, S.T.**, a Civil Engineer passionate about **sustainability, geotechnical engineering, and infrastructure construction**.  
+Here, you can find my academic projects, internship experiences, and volunteer contributions in civil engineering.
 
-      <div class="controls">
-        <button id="prevBtn" aria-label="Previous Slide">&#10094;</button>
-        <button id="nextBtn" aria-label="Next Slide">&#10095;</button>
-      </div>
-    </div>
-  </div>
+---
 
-  <script src="script.js"></script>
-</body>
-</html>
+## 📌 About Me
+- 🎓 Bachelor’s in Civil Engineering, Universitas Kristen Indonesia Toraja (GPA 3.57/4)  
+- 🏗️ Internship: Field Technical Executor at **PT Brantas Abipraya (IKN Project, 2023)**  
+- 🤝 Active in student organizations & volunteering (Kelas Inspirasi Toraja, Indonesia Mengajar, etc.)  
+- 📍 Based in Makassar, Indonesia  
+
+💡 *“I always believe that the spirit of learning and determination to improve will lead me to meaningful experiences.”*
+
+---
+
+## 🛠 Skills
+- **Design & Analysis**: AutoCAD, RAB, GeoStudio 2018  
+- **Documentation & Reporting**: Microsoft Office, QS Training  
+- **Soft Skills**: Teamwork, Communication, Time Management  
+
+---
+
+## 📂 Featured Projects
+
+### 1️⃣ Retention Basin Stability Analysis (Thesis Project)
+- Method: Fellenius & GeoStudio 2018  
+- Case Study: Retention Basin at IKN, East Kalimantan  
+- Includes manual calculation and GeoStudio modeling  
+📄 [View Project](./Projects/Retention-Basin-Stability.md)
+
+![Retention Basin](./Assets/retention-basin.png)
+
+---
+
+### 2️⃣ Bridge Design (Course Project)
+- Arch bridge with steel truss structure  
+- Designed for load transfer through compression to reinforced concrete abutments  
+📄 [View Project](./Projects/Bridge-Design.md)
+
+![Bridge Design](./Assets/bridge.png)
+
+---
+
+### 3️⃣ Traditional House Structure (Tongkonan)
+- Structural design for traditional Torajan house  
+- Focus on cultural-based structural engineering  
+📄 [View Project](./Projects/Tongkonan-Structure.md)
+
+![Tongkonan](./Assets/tongkonan.png)
+
+---
+
+### 4️⃣ Patane Project
+- Structural and architectural design of Patane (Toraja traditional grave)  
+📄 [View Project](./Projects/Patane-Project.md)
+
+![Patane](./Assets/patane.png)
+
+---
+
+### 5️⃣ Boarding House Building
+- Planning and structural calculation of a boarding house project  
+📄 [View Project](./Projects/Boarding-House.md)
+
+![Boarding House](./Assets/boarding-house.png)
+
+---
+
+## 🎖 Certifications
+- Quantity Surveyor Training  
+- GeoStudio 2018  
+- AutoCAD 2D  
+- RAB  
+- English for Career Development  
+
+---
+
+## 📬 Contact
+- 📧 Email: **estrelliasb@gmail.com**  
+- 📱 Phone: **+62 822-9058-8487**  
+- 💼 LinkedIn: [linkedin.com/in/estrelliabara](https://www.linkedin.com/in/estrelliabara)  
+- 📸 Instagram: [@estrelliabara](https://www.instagram.com/estrelliabara)  
+
+---
+
+⭐ If you like my projects, feel free to **star** this repo or connect with me!
